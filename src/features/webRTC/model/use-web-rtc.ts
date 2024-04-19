@@ -10,7 +10,7 @@ type UseWebRTCOptions = {
 export const useWebRTC = ({ roomId }: UseWebRTCOptions) => {
 	const [clients, updateClients] = useStateWithCallback<string[]>([]);
 
-	const peerConnections = useRef({});
+	// const peerConnections = useRef({});
 	const localMediaStream = useRef<MediaStream | null>(null);
 	const peerMediaElements = useRef<Record<string, HTMLVideoElement | null>>({
 		[LOCAL_VIDEO]: null,
