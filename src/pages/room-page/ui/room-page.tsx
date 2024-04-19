@@ -14,8 +14,8 @@ export const RoomPage = () => {
 				return (
 					<div key={clientId}>
 						<video
-							// autoPlay
-							// playsInline
+							autoPlay
+							playsInline
 							ref={(instance) => {
 								provideMediaRef(clientId, instance);
 							}}
