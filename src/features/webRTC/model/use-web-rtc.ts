@@ -40,7 +40,7 @@ export const useWebRTC = ({ roomId }: UseWebRTCOptions) => {
 				if (localVideoElement) {
 					localVideoElement.volume = 0;
 					localVideoElement.srcObject = localMediaStream.current;
-					console.log(localVideoElement);
+					localVideoElement.play();
 				}
 			});
 		};
